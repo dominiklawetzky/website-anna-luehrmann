@@ -2,6 +2,36 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
+<style>
+
+#intro {
+  hyphens: auto;}
+
+  [style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+  }
+  [style*="--aspect-ratio"] > img {
+    height: auto;
+  }
+  @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+      position: relative;
+    }
+    [style*="--aspect-ratio"]::before {
+      content: "";
+      display: block;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    [style*="--aspect-ratio"] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  }
+
+</style>
+
 <div class="site-header-content">
     {{#if @site.cover_image}}
         {{!-- This is a responsive image, it loads different sizes depending on device
@@ -34,6 +64,16 @@ into the {body} of the default.hbs template --}}
 
           <img style="object-fit: cover; display: block; width:100%; height:100%;" src="http://157.230.110.24/content/images/2021/04/Anna-Luehrmann-1.png" alt="Anna Lührmann" />
 
+        </div>
+
+        <div style="margin-bottom: 5em; margin-top: -2em">
+
+          <img src="http://157.230.110.24/content/images/2021/04/Anna-Luehrmann-1.png" loading="lazy" style="float: right; margin: 0em 2em 3em 2em; padding: 0em 0em 0em 0.5em; width:275px">
+
+        <div id="intro">
+          <p style="align: left; word-wrap: word-break; hyphens: auto; margin-top:-1em;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
 
     </div>
