@@ -4,6 +4,7 @@ into the {body} of the default.hbs template --}}
 
 <head>
   <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <style>
@@ -109,6 +110,11 @@ into the {body} of the default.hbs template --}}
 {{!-- The main content area --}}
 <main>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
         <div>
           <article class="article post no-image page">
@@ -116,12 +122,12 @@ into the {body} of the default.hbs template --}}
     <header class="article-header gh-canvas">
     </header>
 
-    <section class="gh-content gh-canvas">
+    <section class="gh-content gh-canvas" data-aos="fade-in">>
             <div class="main-quote">
               „Für klimaneutralen Wohlstand müssen wir jetzt die Weichen stellen – mutig, umsichtig und sozial gerecht.“
             </div>
 
-            <div class="sub-quote">
+            <div class="sub-quote" data-aos="fade-in">>
               Anna Lührmann
             </div>
 
