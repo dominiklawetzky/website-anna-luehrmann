@@ -801,8 +801,9 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     margin: 0 0 0.5rem;
     color: var(--color-midgrey);
+    font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
-    line-height: 1.4em;
+    line-height: 1.5em;
     letter-spacing: 0.02em;
     font-weight: 600;
     text-transform: uppercase;
