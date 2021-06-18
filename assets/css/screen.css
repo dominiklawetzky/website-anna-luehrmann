@@ -1666,7 +1666,7 @@ Ghost editor. */
     margin: 40px 0 0 0;
     padding: 40px 4vmin 140px;
     color: #145f32;
-    background: color-mod(var(--color-darkgrey) l(-5%));
+    background: #145f32;
 }
 
 .site-footer .inner {
