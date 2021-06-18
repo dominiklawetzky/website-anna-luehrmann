@@ -1678,7 +1678,7 @@ Ghost editor. */
 }
 
 .site-footer .copyright a {
-    color: #fff;
+    color: #145f32;
     letter-spacing: -0.015em;
     font-weight: 500;
 }
@@ -1722,7 +1722,7 @@ Ghost editor. */
     width: 2px;
     height: 2px;
     margin: 0 10px 0 0;
-    background: #fff;
+    background: #145f32;
     border-radius: 100%;
 }
 
@@ -1735,7 +1735,7 @@ Ghost editor. */
     }
     .site-footer .copyright,
     .site-footer .copyright a {
-        color: #fff;
+        color: #145f32;
         font-size: 1.5rem;
     }
 }
